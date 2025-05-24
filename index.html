@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soufian Ait Bnfissou - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind bg-slate-50 */
+        }
+        .hero-bg {
+            background-color: #0369a1; /* Tailwind sky-700 */
+            /* A subtle pattern could be added here if desired, e.g., a very light geometric SVG background */
+        }
+        .section-title {
+            color: #0369a1; /* Tailwind sky-700 */
+            border-bottom: 2px solid #f59e0b; /* Tailwind amber-500 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+        }
+        .tag {
+            background-color: #f0f9ff; /* sky-50 */
+            color: #0c4a6e; /* sky-800 */
+            border: 1px solid #7dd3fc; /* sky-300 */
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px; /* rounded-full */
+            font-size: 0.875rem; /* text-sm */
+        }
+        .contact-icon {
+            color: #f59e0b; /* amber-500 */
+        }
+        /* Moroccan-inspired border for section titles */
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #f59e0b; /* amber-500 */
+            margin-right: 10px;
+            transform: rotate(45deg);
+        }
+        .profile-image {
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <header class="hero-bg text-white p-8 md:p-16 text-center">
+        <div class="container mx-auto">
+            <img src="img.png" alt="Soufian Ait Bnfissou" class="profile-image w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-amber-400 shadow-lg">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">SOUFIAN AIT BNFISSOU</h1>
+            <p class="text-xl md:text-2xl text-amber-300 mb-6">E-Tourisme et l'E-Réputation</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 text-lg">
+                <a href="tel:+212622506191" class="hover:text-amber-300 flex items-center">
+                    <i class="fas fa-phone mr-2 contact-icon"></i> +212 622 506 191
+                </a>
+                <a href="mailto:SOUFIAN.AITBNFISSOU@GMAIL.COM" class="hover:text-amber-300 flex items-center">
+                    <i class="fas fa-envelope mr-2 contact-icon"></i> SOUFIAN.AITBNFISSOU@GMAIL.COM
+                </a>
+                <span class="flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2 contact-icon"></i> Ouarzazate, Maroc
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-10">
+
+        <section id="formations" class="mb-12">
+            <h2 class="text-3xl font-semibold section-title">Formations</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-sky-700 mb-1">E-Tourisme et E-Réputation</h3>
+                    <p class="text-slate-600 mb-1">ISTAHT Ouarzazate</p>
+                    <p class="text-sm text-amber-600 font-medium">2023 - 2025 (en cours)</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-sky-700 mb-1">Licence Fondamentale en Chariaa et Droit</h3>
+                    <p class="text-slate-600 mb-1">Faculté Chariaa Ait Melloul, Agadir</p>
+                    <p class="text-sm text-amber-600 font-medium">2021</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-sky-700 mb-1">Baccalauréat Littéraire</h3>
+                    <p class="text-slate-600 mb-1">Lycée Qualifiant Errazi, Taznakhte</p>
+                    <p class="text-sm text-amber-600 font-medium">2017</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="mb-12">
+            <h2 class="text-3xl font-semibold section-title">Compétences</h2>
+            <div class="card p-6">
+                <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                    <div>
+                        <h4 class="text-lg font-semibold text-sky-600 mb-2">Techniques & Créatives</h4>
+                        <ul class="list-disc list-inside space-y-1 text-slate-600">
+                            <li>Création de contenu digital (sites web, gestion réseaux sociaux, montage vidéo/photo)</li>
+                            <li>Microsoft Office (Excel, Word, PowerPoint)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-sky-600 mb-2">Personnelles & Professionnelles</h4>
+                        <ul class="list-disc list-inside space-y-1 text-slate-600">
+                            <li>Esprit d'analyse</li>
+                            <li>Ponctualité</li>
+                            <li>Travail en équipe</li>
+                            <li>Communication efficace</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="mb-12">
+            <h2 class="text-3xl font-semibold section-title">Expériences Professionnelles</h2>
+            <div class="space-y-6">
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-sky-700 mb-1">Stage en Service Réservation & Community Manager</h3>
+                    <p class="text-slate-600 mb-1">Agence ANAAM TOURS, Ouarzazate</p>
+                    <p class="text-sm text-amber-600 font-medium">Novembre 2024 - Décembre 2024 <span class="tag">Stage à venir</span></p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-sky-700 mb-1">Stage en Service Réservation</h3>
+                    <p class="text-slate-600 mb-1">Agence de voyage Leader Travel Service, Ouarzazate</p>
+                    <p class="text-sm text-amber-600 font-medium">Octobre 2024 - Décembre 2024 <span class="tag">Stage à venir</span></p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-semibold text-sky-700 mb-1">Stage en Service Réception & Commercial</h3>
+                    <p class="text-slate-600 mb-1">Hôtel RS Karam Palace, Ouarzazate</p>
+                    <p class="text-sm text-amber-600 font-medium">Avril 2024 - Mai 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="mb-12">
+            <h2 class="text-3xl font-semibold section-title">Projets Académiques</h2>
+            <div class="card p-6">
+                <h3 class="text-xl font-semibold text-sky-700 mb-1">Projet de Marketing Touristique: HEMMEED Hôtel</h3>
+                <p class="text-slate-600 mb-1">Module Marketing, ISTAHT Ouarzazate</p>
+                <p class="text-sm text-amber-600 font-medium mb-2">Décembre 2023 - Juin 2024</p>
+                <ul class="list-disc list-inside space-y-1 text-slate-600">
+                    <li>Chef de groupe</li>
+                    <li>Recherche d'informations et analyse du marché</li>
+                    <li>Création de la présentation PowerPoint stratégique</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <section id="langues">
+                <h2 class="text-3xl font-semibold section-title">Langues</h2>
+                <div class="card p-6">
+                    <ul class="list-none space-y-2">
+                        <li class="flex items-center"><span class="tag mr-3 w-24 text-center">Arabe</span> <span class="text-slate-600">Langue maternelle</span></li>
+                        <li class="flex items-center"><span class="tag mr-3 w-24 text-center">Français</span> <span class="text-slate-600">Courant</span></li>
+                        <li class="flex items-center"><span class="tag mr-3 w-24 text-center">Anglais</span> <span class="text-slate-600">Bon niveau</span></li>
+                        <li class="flex items-center"><span class="tag mr-3 w-24 text-center">Espagnol</span> <span class="text-slate-600">Notions</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="interets">
+                <h2 class="text-3xl font-semibold section-title">Centres d'Intérêt</h2>
+                <div class="card p-6">
+                    <ul class="list-disc list-inside space-y-1 text-slate-600">
+                        <li>Voyages et découvertes culturelles</li>
+                        <li>Sport (préciser si possible, ex: Football, Randonnée)</li>
+                        <li>Recherche de nouveautés et tendances digitales</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-300 p-6 text-center">
+        <div class="container mx-auto">
+            <p>&copy; <span id="currentYear"></span> Soufian Ait Bnfissou. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
